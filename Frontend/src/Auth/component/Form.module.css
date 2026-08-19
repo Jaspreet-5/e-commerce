@@ -1,0 +1,51 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    font-size: large;
+
+}
+
+.container {
+    box-sizing: border-box;
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.inputField , .form input {
+    padding: 7px 12px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    
+}
+
+.formField {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.button {
+    width: fit-content;
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+}
+
+.response{
+    color: red;
+}

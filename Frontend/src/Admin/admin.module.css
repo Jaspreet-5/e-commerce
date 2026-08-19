@@ -1,0 +1,230 @@
+/* .edit{
+    background-color: rgb(48, 212, 48);
+    color: whitesmoke;
+}
+
+.delete{
+    color: whitesmoke;
+    background-color: rgb(252, 42, 42);
+}
+
+.btn{
+    font-weight: bold;
+    padding: 13px 25px;
+    width: fit-content;
+    border-radius: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+    margin: auto;
+}
+.btn:hover{
+    border: 2px solid black;
+}
+
+.btnContainer{
+    display: flex;
+    margin: auto;
+    height: 105px;
+    width: 250px;
+    border: 2px solid black;
+
+}
+
+.container{
+    height: 99vh;
+    display: flex;
+    justify-content: center;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
+    margin: auto;
+    border: 2px solid black;
+    padding: 10px 15px;
+}
+
+.inputField{
+    padding: 10px 8px;
+    border-radius: 7px;
+    border: 1px solid gray;
+}
+
+
+.radioField{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input{
+    margin: 0px 10px;
+}
+
+h2{
+    margin: 19px auto;
+}
+
+label{
+    margin-top: 10px;
+} */
+
+
+
+
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+    background: var(--background);
+}
+
+.formContainer {
+    width: 100%;
+    max-width: 620px;
+    padding: 30px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.formContainer h2 {
+    margin: 0 0 18px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Normal text inputs */
+
+.inputField {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 12px 14px;
+
+    border: 1px solid var(--border);
+    border-radius: 8px;
+
+    background: var(--surface);
+    font-size: 15px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.inputField:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px color-mix(
+        in srgb,
+        var(--primary) 15%,
+        transparent
+    );
+}
+
+.inputField::placeholder {
+    opacity: 0.55;
+}
+
+
+/* Radio sections */
+
+.formContainer fieldset {
+    margin: 12px 0 6px;
+    padding: 16px;
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.formContainer legend {
+    padding: 0 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.radioField {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+}
+
+.radioField label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    padding: 7px 0;
+
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.radioField input {
+    margin: 0;
+    cursor: pointer;
+}
+
+
+/* File input */
+
+.formContainer input[type="file"] {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 10px;
+
+    border: 1px dashed var(--border);
+    border-radius: 8px;
+
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+/* Submit button */
+
+.btn {
+    width: 50%;
+
+    margin: 14px auto;
+    padding: 13px 18px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: var(--primary);
+    /* color: white; */
+    border: 2px solid black;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.15s ease,
+        opacity 0.2s ease;
+}
+
+.btn:hover:not(:disabled) {
+    transform: translateY(-1px);
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

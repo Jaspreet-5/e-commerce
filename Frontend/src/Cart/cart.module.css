@@ -1,0 +1,148 @@
+
+main{
+    margin-top: 10px;
+    width: 90%;
+    height: 98%;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 85vh;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+
+.leftSubContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+    align-items: center;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    background-color: rgb(235, 234, 234);
+    border-radius: 10px;
+
+}
+
+.rightSubContainer{
+    margin-top: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.productWrapper{
+    display: flex;
+    border-radius: 10px;
+    height: 300px;
+    min-width: 60%;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin: 8px 0px;
+}
+
+.imageWrapper{
+    width: 220px;
+    height: 270px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 5px;
+    margin: auto;
+}
+
+.imageWrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.infoWrapper{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    width: 30vw;
+    align-items: center;
+    /* justify-items: center; */
+    margin-left: 15px;
+}
+
+.infoWrapper div ,label{
+    font-weight: 700;
+}
+
+.infoWrapper button{
+    padding: 8px 12px;
+    border-radius: 7px;
+    color: whitesmoke;
+    background: red;
+    font-weight: 800;
+    border: none;
+    box-shadow: 1px 3px 1px gray;
+}
+
+.infoWrapper button:hover{
+    cursor: pointer;
+    box-shadow: 2px 4px 5px gray;
+}
+
+.counter{
+    margin: 0px 8px;
+    font-size: larger;
+}
+.counter:hover{
+    cursor: pointer;
+}
+
+.infoWrapper select{
+    font-size: 15px;
+}
+
+.infoWrapper span{
+    color: rgb(119, 118, 118);
+}
+
+.orderSummary{
+    width: 90%;
+    border: 1px solid black;
+    height: 300px;
+    justify-self: center;
+    border-radius: 10px;
+    background-color: gainsboro;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 13px;
+}
+
+.subTotalContainer{
+    display: flex;
+}
+
+.infoField{
+    display: flex;
+    justify-content: space-between;
+}
+
+.orderSummary button{
+    margin-top: 40px;
+    border-radius: 15px;
+    border: none;
+    padding: 13px 0px ;
+    font-weight: 900;
+    font-size: 16px;
+    background-color: rgb(30, 30, 30);
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.orderSummaryPrice{
+    font-size: 17px;
+    font-weight: 600;
+}

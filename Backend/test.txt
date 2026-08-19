@@ -1,0 +1,85 @@
+Interview Questions and Answers:
+Q1 What is a REST API?
+A REST Representational State Transfer is an architectural style for designing 
+networked applications. It relies on stateless client-server communication using 
+standard HTTP methods and status codes. RESTful APIs are designed around 
+resources (like data), which can be accessed using methods like 
+PUT , 
+PATCH , 
+DELETE .
+GET , 
+POST , 
+Q2 What are the common HTTP methods used in REST APIs, and what do 
+they mean?
+A
+GET  Retrieve a resource or a list of resources.
+POST  Create a new resource.
+PUT  Update a resource by replacing it with new data.
+PATCH  Update a resource by partially modifying it.
+DELETE  Delete a resource.
+Q3 Explain the difference between 
+Notes
+PUT and 
+4
+PATCH .
+A
+PUT  Used to completely replace a resource. It expects the entire resource 
+representation in the request body.
+PATCH  Used to partially modify a resource. It only requires the fields that 
+need to be updated in the request body.
+Q4 What are HTTP status codes, and why are they important in REST APIs?
+A HTTP status codes are three-digit numbers the server sends to the client to 
+indicate the outcome of a request. They are important because they allow 
+clients to understand whether a request was successful, failed, or needs more 
+action. They also help in troubleshooting API issues.
+Q5 Give some examples of common HTTP status codes and when they are 
+used?
+A
+200 OK  The request was successful (e.g., retrieving a resource).
+201 Created  A new resource was successfully created (e.g., 
+400 Bad Request  The request was invalid.
+POST request).
+401 Unauthorized  The client needs authentication API key, credentials).
+403 Forbidden  The client is authenticated but does not have permission to 
+access the resource.
+404 Not Found  The resource does not exist.
+500 Internal Server Error  A server-side error occurred.
+Q6 What does it mean for a method to be idempotent? Which HTTP methods 
+are idempotent?
+A An idempotent method produces the same result regardless of how many 
+times it's called with the same request. 
+GET , 
+PUT , 
+PATCH , and 
+idempotent methods. 
+POST is usually not.
+DELETE are 
+Q7 What does it mean for a method to be safe method? which HTTP methods 
+are safe?A A safe method should not modify any data on the server. 
+GET , 
+and 
+OPTIONS methods are safe method.
+Q8 If an API operation fails, should the API return error status code?
+HEAD , 
+A Yes. API should always return proper error status code with a descriptive 
+message. For ex.
+Notes
+5
+Use 
+400 Bad Request for invalid request data.
+Use 
+404 Not Found if resource is not available.
+Use 
+500 Internal Server Error when a unexpected error happens in server.
+Q9 What are some best practices for designing RESTful APIs?
+Use nouns to represent resources and pluralize collections.
+Use HTTP methods according to their semantics.
+Use status codes appropriately to convey the outcome of the request.
+Keep your APIs consistent and predictable.
+Design stateless APIs.
+Q10 How do you handle errors in RESTful APIs?A
+Notes
+Use proper HTTP status codes to indicate the type of error.
+Include a descriptive error message in the response body (e.g., in JSON 
+format).
+Log errors on the server side for debugging purposes

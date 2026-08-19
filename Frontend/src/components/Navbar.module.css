@@ -1,0 +1,99 @@
+
+.navbar{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 15px;
+}
+
+.btnContainer{
+    display: flex;
+    gap: 10px;
+}
+
+.inputField{
+    background: transparent;
+    padding: 12px 10px;
+    border-radius: 8px;
+    width: 230px;
+    outline: none;
+    border: 2px solid gray;
+    background-image: url("../Assets/search_30dp_000000_FILL0_wght400_GRAD0_opsz24.svg");
+    background-repeat: no-repeat;
+    background-position: right ;
+    background-size: 27px;
+}
+
+.btn{
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bolder;
+    background: transparent;
+    border: none;
+    text-decoration: solid underline 3px;
+    text-underline-offset: 6px;
+    color: purple;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.cartSection{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: fit-content;
+    
+}
+
+.preDot{
+    color: rgb(32, 31, 31);
+}
+
+.afterDot{
+    font-family: monospace;
+    color: purple;
+    font-size: 1.5rem;
+}
+
+.logo{
+    font-size: larger;
+}
+
+
+.line{
+    background-color: rgb(76, 73, 73);
+    width: 99vw;
+    margin: auto;
+    height: 1px;
+}
+
+.searchBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.cart{
+    position: relative;
+}
+
+.cart img {
+    height: 32px;
+    width: 32px;
+}
+
+
+.banner{
+    position: absolute;
+    right: 0;
+    top: -2px;
+    width: 9px;
+    height: 9px;
+    border-radius: 100%;
+    background-color: red;
+}

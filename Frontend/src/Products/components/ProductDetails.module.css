@@ -1,0 +1,317 @@
+.page {
+    width: 100%;
+    padding: 40px 7%;
+    box-sizing: border-box;
+}
+
+.productContainer {
+    max-width: 1300px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+
+    background: white;
+}
+
+
+/* IMAGE */
+
+.imageSection {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.imageWrapper {
+    width: 100%;
+    max-width: 550px;
+
+    aspect-ratio: 1 / 1;
+
+    background: #f6f6f6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.imageWrapper img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    transition: transform 0.3s ease;
+}
+
+.imageWrapper:hover img {
+    transform: scale(1.04);
+}
+
+
+/* DETAILS */
+
+.detailsSection {
+    padding: 10px;
+}
+
+.category {
+    margin: 0 0 8px;
+
+    font-size: 14px;
+    color: #777;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.detailsSection h1 {
+    margin: 0;
+
+    font-size: 34px;
+    line-height: 1.2;
+
+    color: #222;
+}
+
+.productId {
+    margin-top: 10px;
+
+    font-size: 12px;
+    color: #999;
+}
+
+.price {
+    margin-top: 25px;
+
+    font-size: 30px;
+    font-weight: 700;
+
+    color: #111;
+}
+
+.separator {
+    width: 100%;
+    height: 1px;
+
+    background: #e5e5e5;
+
+    margin: 25px 0;
+}
+
+
+/* INFORMATION */
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+.info div {
+    padding: 15px;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.info span {
+    font-size: 13px;
+    color: #777;
+}
+
+.info strong {
+    font-size: 15px;
+    color: #222;
+}
+
+
+/* QUANTITY */
+
+.quantitySection {
+    margin-top: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quantitySection > span {
+    font-weight: 600;
+}
+
+.quantityControl {
+    display: flex;
+    align-items: center;
+
+    border: 1px solid #ccc;
+    border-radius: 7px;
+
+    overflow: hidden;
+}
+
+.quantityControl button {
+    width: 42px;
+    height: 40px;
+
+    border: none;
+    background: #f5f5f5;
+
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.quantityControl button:hover {
+    background: #e8e8e8;
+}
+
+.quantityControl span {
+    width: 45px;
+
+    text-align: center;
+
+    font-weight: 600;
+}
+
+
+/* TOTAL */
+
+.itemTotal {
+    margin-top: 25px;
+
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 17px;
+}
+
+.itemTotal strong {
+    font-size: 20px;
+}
+
+
+/* BUTTONS */
+
+.actions {
+    display: flex;
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.actions button {
+    flex: 1;
+
+    height: 52px;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.cartButton {
+    background: white;
+    border: 1px solid #222;
+    color: #222;
+}
+
+.cartButton:hover {
+    background: #f5f5f5;
+}
+
+.buyButton {
+    border: none;
+    background: #222;
+    color: white;
+}
+
+.buyButton:hover {
+    background: #000;
+}
+
+
+/* DELIVERY */
+
+.delivery {
+    margin-top: 30px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #e5e5e5;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+.delivery > div {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.delivery span {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.delivery strong {
+    font-size: 14px;
+}
+
+.delivery small {
+    color: #777;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .page {
+        padding: 20px;
+    }
+
+    .productContainer {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .detailsSection h1 {
+        font-size: 27px;
+    }
+
+    .info {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .info {
+        grid-template-columns: 1fr;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+}
