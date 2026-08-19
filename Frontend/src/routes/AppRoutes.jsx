@@ -11,6 +11,7 @@ import AdminProductEditPage from '../Admin/pages/AdminProductEditPage'
 import CartPage from '../Cart/pages/CartPage'
 import OrderPage from '../Order/pages/OrderPage'
 import IndividualProductPage from '../Products/pages/IndividualProductPage'
+import {Navigate} from "react-router-dom"
 
 const AppRoutes = () => {
   return (
@@ -30,8 +31,20 @@ const AppRoutes = () => {
 
         <Route element={<MainLayout />}>products
 
-          <Route path='/products' element={<ProuductPage />} />
-          <Route path='/product/:productId' element={<IndividualProductPage />}  />
+          <Route
+        path="/"
+        element={<Navigate to="/products" replace />}
+    />
+
+    <Route
+        path="/products"
+        element={<ProuductPage />}
+    />
+
+    <Route
+        path="/product/:productId"
+        element={<IndividualProductPage />}
+    />
 
 
 
